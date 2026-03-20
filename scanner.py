@@ -39,7 +39,7 @@ def run_daily_agent():
     from emailer import format_as_html
     html_report = format_as_html(report_body, date_str)
     
-    subject = f"दैनिक स्टार्टअप अवसर (Daily Startup Opportunities) - ${date_str}"
+    subject = f"🚀 दैनिक स्टार्टअप अवसर (Daily Startup Opportunities) - {date_str}"
     
     recipient = os.getenv("RECIPIENT_EMAIL", "test@example.com")
     success = send_email(subject, html_report, recipient)
