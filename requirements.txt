@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+feedparser
+google-genai
+openai
+python-dotenv
+yagmail
